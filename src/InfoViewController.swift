@@ -64,6 +64,7 @@ class InfoViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.reloadData()
         tableView.layoutIfNeeded()
         tableHeightConstraint.constant = tableView.contentSize.height
+         delegate?.onButtonPressed()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
